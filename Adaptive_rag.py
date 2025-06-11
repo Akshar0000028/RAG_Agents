@@ -15,14 +15,14 @@ class AdaptiveRagAgent(TypedDict):
 
 llm = ChatNVIDIA(
     model="meta/llama3-70b-instruct",
-    nvidia_api_key="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",
+    nvidia_api_key="NVIDIA_API_KEY",
     temperature=0.3
 )
 
 embeddings = NVIDIAEmbeddings(
     model="nvidia/nv-embedqa-e5-v5",
     model_type="passage",
-    nvidia_api_key="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"
+    nvidia_api_key="NVIDIA_API_KEY"
 )
 
 pdf_path = "C:\\Users\\Akshar Savaliya\\Downloads\\Agentic_NN.pdf"

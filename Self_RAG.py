@@ -10,14 +10,14 @@ import os
 
 llm = ChatNVIDIA(
     model="meta/llama3-70b-instruct",
-    nvidia_api_key="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",
+    nvidia_api_key="NVIDIA_API_KEY",
     temperature=0.3
 )
 
 embedding = NVIDIAEmbeddings(
     model="nvidia/nv-embedqa-e5-v5",
     model_type="passage",
-    nvidia_api_key="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"
+    nvidia_api_key="NVIDIA_API_KEY"
 )
 
 
